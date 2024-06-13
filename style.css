@@ -4,10 +4,6 @@
   list-style: none;
   text-decoration: none;
 }
-/* section,
-footer {
-  height: 691px;
-} */
 h2 {
   font-size: 3rem;
 }
@@ -39,6 +35,9 @@ nav ul a {
 }
 nav ul a:hover {
   text-decoration: underline;
+}
+nav ul a:active{
+  text-decoration: none;
 }
 /* --------------------------- main-section --------------------------- */
 /* --------------------------- banniere --------------------------- */
@@ -75,7 +74,6 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   place-items: center;
-  /* gap: 5px; */
   background: #f7f7f7;
 }
 .prog-box {
@@ -87,7 +85,6 @@ h1 {
   min-width: 120px;
   min-height: 200px;
   gap: 15px;
-  /* border: 1px solid red; */
 }
 .image-prog {
   width: auto;
@@ -118,7 +115,6 @@ h1 {
 .formation {
   display: flex;
   gap: 40px;
-  /* padding-top: 35px; */
 }
 /* --------------------------- skills-section --------------------------- */
 .skills {
@@ -294,7 +290,6 @@ footer {
   justify-content: space-evenly;
   gap: 70px;
   padding: 10px;
-  /* border: 1px solid red; */
 }
 .contacts {
   display: flex;
