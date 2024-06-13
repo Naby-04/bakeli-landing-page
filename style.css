@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+section,
+footer {
+  height: 691px;
+  background: #000;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+/* --------------------------- header --------------------------- */
+header {
+  background: #f7f7f7;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 117px;
+  position: fixed;
+  width: 100%;
+}
+nav {
+  padding: 5px;
+}
+nav ul {
+  display: flex;
+  font-size: 18px;
+  gap: 40px;
+}
+nav ul a {
+  color: #000;
+}
+nav ul a:hover {
+  text-decoration: underline;
+}
+/* --------------------------- main-section --------------------------- */
+/* --------------------------- banniere --------------------------- */
+.home {
+  background: url(image/background.jpeg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.home img {
+  border-radius: 20px;
+  height: 101px;
+}
+h1 {
+  background: #3c3c3c;
+  color: #fff;
+  padding: 2rem;
+}
+.home p {
+  text-align: center;
+  color: #fff;
+}
+/* --------------------------- programme-section --------------------------- */
+
+/* --------------------------- first-part --------------------------- */
+
+.prog1 {
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  background: #f7f7f7;
+}
+.prog-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+.image-prog {
+  width: 70%;
+  border: 1px solid green;
+  border-radius: 50%;
+}
+.prog-box img {
+  padding: 20%;
+  width: 50%;
+}
+.prog-box h2 {
+  font-size: 1.2rem;
+}
+
+/* --------------------------- second-part --------------------------- */
+
+.prog2 {
+  height: 30%;
+  background: #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+.formation {
+  display: flex;
+  gap: 40px;
+}
+/* --------------------------- skills-section --------------------------- */
+.skills {
+  height: 580px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills-card {
+  height: 290px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.skills-card:nth-child(1) {
+  background: #83cbcf;
+}
+.skills-card:nth-child(2) {
+  background: #67b4cc;
+}
+.skills-card:nth-child(3) {
+  background: #717967;
+}
+.skills-card:nth-child(4) {
+  background: #649a97;
+}
+.skills-card:nth-child(5) {
+  background: #827263;
+}
+.skills-card:nth-child(6) {
+  background: #35a0ae;
+}
+.skills-card:nth-child(7) {
+  background: #237792;
+}
+.skills-card:nth-child(8) {
+  background: #a5c0ad;
+}
+/* ------------------------gestion des images------------------------ */
+.skills-card img {
+  height: 50%;
+  width: auto;
+}
+/* --------------------------- data-section --------------------------- */
+.data {
+  background: #f7f7f7;
+  height: 691px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.data-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.data-zone {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.first-zone,
+.second-zone {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 40%;
+}
+.data-box,
+.data-box input,
+.label-box {
+  width: 100%;
+}
+.label-box {
+  display: flex;
+  justify-content: space-between;
+}
+.label-box label:nth-child(1) {
+  font-weight: bold;
+}
+/*---------------------------- progress bar ----------------------------*/
+
+.progress-bar {
+  width: 100%;
+  height: 15px;
+}
+.progress-bar .track {
+  width: 100%;
+  border-radius: 20px;
+  height: 16px;
+  background: #e3e3e3;
+  z-index: -1;
+}
+.first-zone .data-box:nth-child(1) .progress {
+  width: 100%;
+  height: 15px;
+  border-radius: 20px;
+  background: #a5c0ad;
+  position: relative;
+  bottom: 15.5px;
+}
+.first-zone .data-box:nth-child(2) .progress {
+  width: 80%;
+  height: 15px;
+  border-radius: 20px;
+  background: #a5c0ad;
+  position: relative;
+  bottom: 15.5px;
+}
+.second-zone .data-box:nth-child(1) .progress {
+  width: 90%;
+  height: 15px;
+  border-radius: 20px;
+  background: #a5c0ad;
+  position: relative;
+  bottom: 15.5px;
+}
+.second-zone .data-box:nth-child(2) .progress {
+  width: 80%;
+  height: 15px;
+  border-radius: 20px;
+  background: #a5c0ad;
+  position: relative;
+  bottom: 15.5px;
+}
+
+/* --------------------------- team-section --------------------------- */
+.team {
+  background: #a5c0ad;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.team-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.team-card img {
+  width: 20%;
+}
+/* --------------------------- about-us-section --------------------------- */
+.about-us {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.about-us img {
+  height: 180px;
+  width: 150px;
+}
+/* --------------------------- footer --------------------------- */
+footer {
+  background: #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.contacts {
+  display: flex;
+  gap: 80px;
+}
+.contact:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact:nth-child(2),
+.contact:nth-child(3),
+.contact:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.socials {
+  display: flex;
+  gap: 50px;
+}
+/* --------------------------- responsive --------------------------- */
+
+@media screen and (max-width: 920px) {
+  /* --------------------------- header --------------------------- */
+  nav ul {
+    gap: 12px;
+  }
+  nav ul li a {
+    font-size: 12px;
+  }
+  h1 {
+    text-align: center;
+  }
+  /* --------------------------- programme --------------------------- */
+
+  .programme {
+    height: auto;
+  }
+  .prog-box p {
+    font-size: 13px;
+  }
+  .prog1 {
+    height: auto;
+    padding: 10px;
+  }
+  .prog2 {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .prog2 h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .formation {
+    place-items: center;
+    text-align: center;
+    width: 96%;
+    gap: 5px;
+  }
+  .formation p {
+    font-size: 11px;
+    width: 60%;
+  }
+  /* --------------------------- skills --------------------------- */
+  .skills {
+    height: auto;
+  }
+  .skills-card {
+    width: 100%;
+  }
+  /* --------------------------- data --------------------------- */
+  .data-zone {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .first-zone,
+  .second-zone,
+  .data-box {
+    width: 100%;
+  }
+  /* --------------------------- team --------------------------- */
+  .team {
+    height: auto;
+    gap: 20px;
+  }
+  .team-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    gap: 10px;
+  }
+  .team-card img {
+    height: 90%;
+    width: 90%;
+  }
+  /* --------------------------- about-us --------------------------- */
+  .about-us p {
+    font-size: 12px;
+  }
+  .about-us h3 {
+    font-size: 1.5rem;
+  }
+  /* --------------------------- footer --------------------------- */
+  footer .contacts {
+    font-size: 10px;
+    gap: 10px;
+    padding: 5px;
+  }
+}
