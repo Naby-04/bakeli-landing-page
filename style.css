@@ -43,7 +43,8 @@ nav ul a:hover {
 /* --------------------------- main-section --------------------------- */
 /* --------------------------- banniere --------------------------- */
 .home {
-  background: url(image/background.jpeg);
+  background: url(image/background.jpeg) no-repeat;
+   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
