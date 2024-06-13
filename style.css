@@ -4,11 +4,10 @@
   list-style: none;
   text-decoration: none;
 }
-section,
+/* section,
 footer {
   height: 691px;
-  background: #000;
-}
+} */
 h2 {
   font-size: 3rem;
 }
@@ -24,6 +23,7 @@ header {
   align-items: center;
   height: 117px;
   position: fixed;
+  z-index: 1;
   width: 100%;
 }
 nav {
@@ -49,6 +49,7 @@ nav ul a:hover {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  height: 691px;
 }
 .home img {
   border-radius: 20px;
@@ -68,23 +69,27 @@ h1 {
 /* --------------------------- first-part --------------------------- */
 
 .prog1 {
-  height: 70%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 40px;
+  height: 450px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  place-items: center;
+  /* gap: 5px; */
   background: #f7f7f7;
 }
 .prog-box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  min-width: 120px;
+  min-height: 200px;
   gap: 15px;
+  /* border: 1px solid red; */
 }
 .image-prog {
-  width: 70%;
+  width: auto;
   border: 1px solid green;
   border-radius: 50%;
 }
@@ -93,7 +98,7 @@ h1 {
   width: 50%;
 }
 .prog-box h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /* --------------------------- second-part --------------------------- */
@@ -105,26 +110,28 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10%;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .formation {
   display: flex;
   gap: 40px;
+  /* padding-top: 35px; */
 }
 /* --------------------------- skills-section --------------------------- */
 .skills {
   height: 580px;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto fill, 1fr);
 }
 .skills-card {
   height: 290px;
-  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
 }
 .skills-card:nth-child(1) {
   background: #83cbcf;
@@ -249,6 +256,9 @@ h1 {
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .team-card {
   display: flex;
@@ -267,6 +277,8 @@ h1 {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  padding: 15px;
+  gap: 100px;
 }
 .about-us img {
   height: 180px;
@@ -278,7 +290,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  gap: 70px;
+  padding: 10px;
+  /* border: 1px solid red; */
 }
 .contacts {
   display: flex;
@@ -304,6 +319,9 @@ footer {
 
 @media screen and (max-width: 920px) {
   /* --------------------------- header --------------------------- */
+  header {
+    height: 100px;
+  }
   nav ul {
     gap: 12px;
   }
@@ -319,11 +337,17 @@ footer {
     height: auto;
   }
   .prog-box p {
-    font-size: 13px;
+    font-size: 10px;
   }
   .prog1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
     height: auto;
     padding: 10px;
+  }
+  .prog-box:nth-child(3) {
+    grid-column: -3/-1;
   }
   .prog2 {
     width: 100%;
@@ -346,6 +370,7 @@ footer {
   /* --------------------------- skills --------------------------- */
   .skills {
     height: auto;
+    grid-template-columns: auto;
   }
   .skills-card {
     width: 100%;
@@ -385,6 +410,9 @@ footer {
     font-size: 1.5rem;
   }
   /* --------------------------- footer --------------------------- */
+  footer {
+    gap: 90px;
+  }
   footer .contacts {
     font-size: 10px;
     gap: 10px;
